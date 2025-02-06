@@ -85,9 +85,9 @@ std::vector<Vin> ResourceLoader::GetTestData(float k) {
     return std::vector<Vin>(data.begin() + taille, data.end());
 }
 
-ListeVin ResourceLoader::GetTrainDataLinked(float k)
+ListeVin& ResourceLoader::GetTrainDataLinked(float k)
 {
-    ListeVin liste;
+    static ListeVin liste;
     size_t taille = static_cast<size_t>(data.size() * k);
 
     for (int i = 0; i < taille; i++)
@@ -98,9 +98,9 @@ ListeVin ResourceLoader::GetTrainDataLinked(float k)
     return liste;
 }
 
-ListeVin ResourceLoader::GetTestDataLinked(float k)
+ListeVin& ResourceLoader::GetTestDataLinked(float k)
 {
-    ListeVin liste;
+    static ListeVin liste;
     size_t tailleTrain = static_cast<size_t>(data.size() * k);
     size_t tailleTest = data.size() - tailleTrain;
 

@@ -14,8 +14,8 @@ public:
 	void Afficher();
 	std::vector<Vin> GetTrainData(float);
 	std::vector<Vin> GetTestData(float);
-	ListeVin GetTrainDataLinked(float);
-	ListeVin GetTestDataLinked(float);
+	ListeVin& GetTrainDataLinked(float);
+	ListeVin& GetTestDataLinked(float);
 };
 
 /*

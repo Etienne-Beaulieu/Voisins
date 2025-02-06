@@ -15,12 +15,14 @@ int main()
     */
 
     std::cout << "Donnees d'entrainement (Liste chainee):" << std::endl;
-    ListeVin trainList = loader.GetTrainDataLinked(k);
+    ListeVin& trainList = loader.GetTrainDataLinked(k);
 
     trainList.AfficherLinked();
 
     std::cout << "Donnees de test (Liste chainee):" << std::endl;
-    ListeVin testList = loader.GetTestDataLinked(k);
+    ListeVin& testList = loader.GetTestDataLinked(k);
+
+    //testList.AfficherLinked();
 
     return 0;
 }

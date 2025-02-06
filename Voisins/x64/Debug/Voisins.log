@@ -1,7 +1,2 @@
-﻿  Liste.cpp
-  ResourceLoader.cpp
-  Voisins.cpp
-C:\Users\Utilisateur\Desktop\Voisins\Voisins\Voisins\Voisins.cpp(18,52): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Utilisateur\Desktop\Voisins\Voisins\Voisins\Voisins.cpp(23,50): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
+﻿  ResourceLoader.cpp
   Voisins.vcxproj -> C:\Users\Utilisateur\Desktop\Voisins\Voisins\Voisins\x64\Debug\Voisins.exe
