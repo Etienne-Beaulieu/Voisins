@@ -2,7 +2,6 @@
 
 #include <vector>
 
-#include "Vin.h"
 #include "ListeVin.h"
 
 class ResourceLoader

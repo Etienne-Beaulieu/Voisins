@@ -22,6 +22,8 @@ void ListeVin::Ajouter(Vin donnee)
 {
 	NoeudVin* nouveau = new NoeudVin{ donnee, nullptr };
 
+	nouveau->donnee = donnee;
+
 	if (m_premier == nullptr)
 	{
 		m_premier = nouveau;

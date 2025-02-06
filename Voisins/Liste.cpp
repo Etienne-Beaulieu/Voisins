@@ -26,6 +26,7 @@ void Liste::Ajouter(int donnee)
 	{
 		m_premier = nouveau;
 	}
+
 	else
 	{
 		Noeud* iterateur = m_premier;
